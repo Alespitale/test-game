@@ -1,15 +1,9 @@
 export function obtenerMayor(x, y) {
-  if (x > y) {
-    return x;
-  }
-  return y;
+  return x>y? x:y;
 }
 
 export function mayoriaDeEdad(edad) {
-  if (edad >= 18) {
-    return "Allowed";
-  }
-  return "Not allowed";
+  return edad >= 18 ? "Allowed" : "Not allowed";
 }
 
 export function conection(status) {
@@ -54,24 +48,15 @@ export function colors(color) {
 }
 
 export function esDiezOCinco(numero) {
-  if (numero === 10 || numero === 5) {
-    return true;
-  }
-  return false;
+  return numero === 10 || numero === 5;
 }
 
 export function estaEnRango(numero) {
-  if (numero > 20  && numero < 50) {
-    return true;
-  }
-  return false;
+  return numero > 20 && numero < 50;
 }
 
 export function esEntero(numero) {
-  if (numero % 1 === 0) {
-    return true;
-  }
-  return false;
+  return numero % 1 === 0;
 }
 
 export function fizzBuzz(numero) {
@@ -114,10 +99,7 @@ export function esPrimo(numero) {
 }
 
 export function esVerdadero(valor) {
-  if (valor) {
-    return "Soy verdadero";
-  }
-  return "Soy falso";
+  return valor ? "Soy verdadero" : "Soy falso";
 }
 
 export function tablaDelSeis() {
