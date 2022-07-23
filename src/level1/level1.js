@@ -111,16 +111,6 @@ export function deEuroAdolar(euro) {
 }
 
 export function esVocal(letra) {
-  const array = ["a", "e", "i", "o", "u"];
-  if (
-    letra === "a" ||
-    letra === "e" ||
-    letra === "i" ||
-    letra === "o" ||
-    letra === "u"
-  ) {
-    return "Es vocal";
-  } else {
-    return "Dato incorrecto";
-  }
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") return "Es vocal";
+  return "Dato incorrecto";
 }
