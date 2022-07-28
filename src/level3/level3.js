@@ -95,28 +95,25 @@ export function mayorACien(array) {
 }
 
 export function breakStatement(numero) {
-  let breakNumber = 0;
-  let array = [];
-  while (breakNumber >= 0) {
+  const array = [];
+  for (let i = 0; i < 10; i++) {
+    if (i === numero) {
+      break;
+    }
     numero = numero + 2;
     array.push(numero);
-    breakNumber++;
-    if (breakNumber === 10) {
-      return array;
-    }
-    if (breakNumber === numero) {
-      return "Se interrumpió la ejecución";
-    }
   }
+  return array.length === 10 ? array : "Se interrumpió la ejecución";
 }
 
 export function continueStatement(numero) {
-  let continueNumber = 0;
-  let array = [];
-  while (continueNumber != 9) {
-      numero = numero + 2;
-      array.push(numero);
-      continueNumber++;
+  const array = [];
+  for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+      continue;
+    }
+    numero = numero + 2;
+    array.push(numero);
   }
   return array;
 }
