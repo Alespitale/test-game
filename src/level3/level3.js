@@ -97,9 +97,7 @@ export function mayorACien(array) {
 export function breakStatement(numero) {
   const array = [];
   for (let i = 0; i < 10; i++) {
-    if (i === numero) {
-      break;
-    }
+    if (i === numero) break;
     numero = numero + 2;
     array.push(numero);
   }
@@ -109,9 +107,7 @@ export function breakStatement(numero) {
 export function continueStatement(numero) {
   const array = [];
   for (let i = 0; i < 10; i++) {
-    if (i === 5) {
-      continue;
-    }
+    if (i === 5) continue;
     numero = numero + 2;
     array.push(numero);
   }
